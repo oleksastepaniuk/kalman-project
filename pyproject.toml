@@ -37,10 +37,8 @@ package-dir = { "" = "src" }
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.ruff]
-line-length = 100
-target-version = "py311"
-select = ["E", "F", "W", "I"]
+[tool.ruff.lint]
+select = ["E", "F", "W"]
 
 [tool.mypy]
 python_version = "3.11"
