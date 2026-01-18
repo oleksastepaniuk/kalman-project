@@ -48,4 +48,6 @@ class KalmanFilter:
         K = self.P @ self.H.T @ np.linalg.inv(S)
 
         self.x = self.x + K @ y
-        self.P = (np.eye(self.P.shape[0]) - K @ self.H) @ self.P
+
+        Identity = np.eye(self.P.shape[0], dtype=self.P.dtype)
+        self.P = (Identity - K @ self.H) @ self.P
