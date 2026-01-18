@@ -27,7 +27,7 @@ We consider a one-dimensional point mass with:
 The system is simulated with known ground truth, allowing quantitative error evaluation.
 
 State vector:
-$$x_k = \begin{bmatrix} p_k \\ v_k \end{bmatrix}$$
+$$x_k = [p_k, v_k]^T$$
 
 State transition model:
 $$x_{k+1} = F x_k + B u_k + w_k$$
