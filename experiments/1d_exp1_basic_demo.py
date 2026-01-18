@@ -76,6 +76,9 @@ def main() -> None:
     rmse_kf = rmse(true_position, est_positions)
     impr = rmse_meas / rmse_kf if rmse_kf > 0 else np.inf
 
+    print("1D. Experiment 1: basic demonstration")
+    print("-------------------------------------")
+
     print(f"RMSE(measurements vs true position): {rmse_meas:.3f}")
     print(f"RMSE(KF estimate vs true position): {rmse_kf:.3f}")
     print(f"Improvement factor (meas / kf): {impr:.2f}x")
