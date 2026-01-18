@@ -35,6 +35,7 @@ $$x_{k+1} = F x_k + B u_k + w_k$$
 Measurement model:
 $$z_k = H x_k + v_k$$
 
+---
 ### Experiment 1: does the Kalman filter help?
 
 Purpose is to establish a minimal baseline by comparing raw noisy measurements with Kalman filter position estimates.
